@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUMINA Face | Avant-Garde Obsidian Network</title>
+    <title>LUMINA Face | Official Contestant Voting</title>
    
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta name="description" content="Lumina Face Nigeria - High-fashion vanguard roster, digital arena, and immutable contestant metrics.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">\n    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Lumina Face Nigeria - Discover the LUMINA Face 2026 contestants and support your favourite contestant.">
     
     <style>
         /* ===== LUMINA FACE DESIGN SYSTEM VARIABLES ===== */
@@ -15,15 +18,15 @@
             --onyx-deep: #050505;
             --onyx-surface: #0a0a0c;
             --onyx-card: #121215;
-            --lumina-gold: #E5C158; /* Tailored luminescent gold */
-            --gold-glow: rgba(229, 193, 88, 0.25);
-            --gold-glow-intense: rgba(229, 193, 88, 0.6);
+            --lumina-red: #E5092A; /* Tailored luminescent gold */
+            --red-glow: rgba(229, 9, 42, 0.22);
+            --red-glow-intense: rgba(229, 9, 42, 0.48);
             --text-primary: #ffffff;
             --text-secondary: #a4a4af; /* Heightened for elegant readability */
             --text-dark: #52525b;
             --border-muted: #1f1f24;
-            --border-glow: #E5C158; /* Gold aligned border */
-            --font-display: 'Orbitron', sans-serif;
+            --border-glow: #E5092A; /* Gold aligned border */
+            --font-display: 'Space Grotesk', 'Inter', sans-serif;
             --font-body: 'Inter', sans-serif;
             --font-mono: 'Space Mono', monospace;
             --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -59,8 +62,8 @@
             width: 100%;
             height: 100%;
             background-image: 
-                linear-gradient(to right, rgba(229, 193, 88, 0.015) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(229, 193, 88, 0.015) 1px, transparent 1px);
+                linear-gradient(to right, rgba(229, 9, 42, 0.025) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(229, 9, 42, 0.025) 1px, transparent 1px);
             background-size: 60px 60px;
             pointer-events: none;
             z-index: 1;
@@ -78,7 +81,7 @@
             border-radius: 3px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: var(--lumina-gold);
+            background: var(--lumina-red);
         }
 
         /* ===== HIGH-END ARCHITECTURAL NAVBAR ===== */
@@ -108,8 +111,8 @@
         }
 
         .logo span {
-            color: var(--lumina-gold);
-            text-shadow: 0 0 10px var(--gold-glow);
+            color: var(--lumina-red);
+            text-shadow: 0 0 10px var(--red-glow);
         }
 
         .nav-links {
@@ -130,8 +133,8 @@
         }
 
         .nav-links a:hover {
-            color: var(--lumina-gold);
-            text-shadow: 0 0 8px var(--gold-glow);
+            color: var(--lumina-red);
+            text-shadow: 0 0 8px var(--red-glow);
         }
 
         .nav-links a::after {
@@ -141,8 +144,8 @@
             height: 2px;
             bottom: -6px;
             left: 0;
-            background-color: var(--lumina-gold);
-            box-shadow: 0 0 8px var(--lumina-gold);
+            background-color: var(--lumina-red);
+            box-shadow: 0 0 8px var(--lumina-red);
             transition: var(--transition);
         }
 
@@ -158,8 +161,8 @@
 
         .cta-btn {
             background-color: transparent;
-            color: var(--lumina-gold);
-            border: 1px solid var(--lumina-gold);
+            color: var(--lumina-red);
+            border: 1px solid var(--lumina-red);
             padding: 0.75rem 1.8rem;
             font-family: var(--font-mono);
             font-size: 0.8rem;
@@ -168,13 +171,13 @@
             transition: var(--transition);
             letter-spacing: 1.5px;
             text-transform: uppercase;
-            box-shadow: 0 0 10px var(--gold-glow);
+            box-shadow: 0 0 10px var(--red-glow);
         }
 
         .cta-btn:hover {
-            background-color: var(--lumina-gold);
+            background-color: var(--lumina-red);
             color: var(--onyx-pure);
-            box-shadow: 0 0 20px var(--gold-glow-intense);
+            box-shadow: 0 0 20px var(--red-glow-intense);
         }
 
         /* ===== HAMBURGER RESPONSIVE MENU ===== */
@@ -229,7 +232,7 @@
             letter-spacing: 12px;
             line-height: 1.1;
             text-transform: uppercase;
-            background: linear-gradient(180deg, #fff 30%, var(--lumina-gold) 100%);
+            background: linear-gradient(180deg, #fff 30%, var(--lumina-red) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -245,7 +248,7 @@
 
         .btn {
             display: inline-block;
-            background-color: var(--lumina-gold);
+            background-color: var(--lumina-red);
             color: var(--onyx-pure);
             padding: 1.1rem 3.5rem;
             text-decoration: none;
@@ -254,14 +257,14 @@
             letter-spacing: 3px;
             text-transform: uppercase;
             transition: var(--transition);
-            border: 1px solid var(--lumina-gold);
-            box-shadow: 0 0 25px var(--gold-glow);
+            border: 1px solid var(--lumina-red);
+            box-shadow: 0 0 25px var(--red-glow);
         }
 
         .btn:hover {
             background-color: transparent;
-            color: var(--lumina-gold);
-            box-shadow: 0 0 35px rgba(229, 193, 88, 0.5);
+            color: var(--lumina-red);
+            box-shadow: 0 0 35px rgba(229, 9, 42, 0.42);
             transform: translateY(-2px);
         }
 
@@ -331,8 +334,8 @@
 
         /* Decoupled Interactive States */
         .model-card:hover {
-            border-color: var(--lumina-gold);
-            box-shadow: 0 0 30px rgba(229, 193, 88, 0.15);
+            border-color: var(--lumina-red);
+            box-shadow: 0 0 30px rgba(229, 9, 42, 0.18);
             transform: translateY(-5px);
         }
 
@@ -370,7 +373,7 @@
             top: 2.3rem;
             font-family: var(--font-mono);
             font-size: 0.6rem;
-            color: var(--lumina-gold);
+            color: var(--lumina-red);
             letter-spacing: 1px;
             opacity: 0.7;
         }
@@ -387,7 +390,7 @@
 
         .elite-card {
             background: linear-gradient(135deg, var(--onyx-surface) 0%, var(--onyx-pure) 100%);
-            border: 1px solid var(--lumina-gold);
+            border: 1px solid var(--lumina-red);
             padding: 50px;
             max-width: 1000px;
             margin: 0 auto;
@@ -396,7 +399,7 @@
             justify-content: space-between;
             gap: 40px;
             position: relative;
-            box-shadow: 0 0 20px var(--gold-glow);
+            box-shadow: 0 0 20px var(--red-glow);
         }
 
         .elite-card::before {
@@ -408,7 +411,7 @@
             padding: 0 10px;
             font-family: var(--font-mono);
             font-size: 0.65rem;
-            color: var(--lumina-gold);
+            color: var(--lumina-red);
             letter-spacing: 2px;
         }
 
@@ -422,7 +425,7 @@
         }
 
         .elite-content p {
-            color: var(--lumina-gold);
+            color: var(--lumina-red);
             font-family: var(--font-mono);
             font-size: 0.85rem;
             letter-spacing: 1px;
@@ -430,7 +433,7 @@
 
         .payment-trigger-btn {
             display: inline-block;
-            background: var(--lumina-gold);
+            background: var(--lumina-red);
             color: var(--onyx-pure);
             text-decoration: none;
             padding: 18px 40px;
@@ -441,7 +444,7 @@
             transition: var(--transition);
             letter-spacing: 2px;
             text-transform: uppercase;
-            box-shadow: 0 0 15px var(--gold-glow);
+            box-shadow: 0 0 15px var(--red-glow);
         }
 
         .payment-trigger-btn:hover {
@@ -467,12 +470,12 @@
 
         .modal-content {
             background: var(--onyx-surface);
-            border: 1px solid var(--lumina-gold);
+            border: 1px solid var(--lumina-red);
             width: 90%;
             max-width: 500px;
             padding: 40px !important;
             animation: modalFade 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 30px var(--gold-glow);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 30px var(--red-glow);
         }
 
         @keyframes modalFade {
@@ -496,17 +499,17 @@
 
         .success-content {
             background: var(--onyx-surface);
-            border: 1px solid var(--lumina-gold);
+            border: 1px solid var(--lumina-red);
             padding: 4rem;
             text-align: center;
             max-width: 500px;
-            box-shadow: 0 0 40px var(--gold-glow);
+            box-shadow: 0 0 40px var(--red-glow);
         }
 
         .success-icon {
             font-family: var(--font-mono);
             font-size: 1.2rem;
-            color: var(--lumina-gold);
+            color: var(--lumina-red);
             margin-bottom: 1.5rem;
             letter-spacing: 1px;
         }
@@ -555,7 +558,7 @@
             font-size: 0.9rem;
             margin-top: 30px;
             margin-bottom: 10px;
-            color: var(--lumina-gold);
+            color: var(--lumina-red);
             letter-spacing: 1px;
             text-transform: uppercase;
         }
@@ -577,7 +580,7 @@
         }
 
         .submit-btn {
-            background-color: var(--lumina-gold);
+            background-color: var(--lumina-red);
             color: var(--onyx-pure);
             border: none;
             width: 100%;
@@ -646,8 +649,8 @@
         }
 
         .social-links a:hover {
-            color: var(--lumina-gold);
-            text-shadow: 0 0 5px var(--gold-glow);
+            color: var(--lumina-red);
+            text-shadow: 0 0 5px var(--red-glow);
         }
 
         .newsletter {
@@ -684,7 +687,7 @@
 
         .newsletter-form button {
             background: var(--border-muted);
-            color: var(--lumina-gold);
+            color: var(--lumina-red);
             border: none;
             padding: 0 1.5rem;
             font-family: var(--font-mono);
@@ -695,9 +698,9 @@
         }
 
         .newsletter-form button:hover {
-            background: var(--lumina-gold);
+            background: var(--lumina-red);
             color: var(--onyx-pure);
-            box-shadow: 0 0 15px var(--gold-glow);
+            box-shadow: 0 0 15px var(--red-glow);
         }
 
         /* ===== STRUCTURAL RESPONSIVE WRAPPERS ===== */
@@ -741,12 +744,12 @@
             
             .hamburger.active .bar:nth-child(1) {
                 transform: translateY(7px) rotate(45deg);
-                background-color: var(--lumina-gold);
+                background-color: var(--lumina-red);
             }
             
             .hamburger.active .bar:nth-child(3) {
                 transform: translateY(-7px) rotate(-45deg);
-                background-color: var(--lumina-gold);
+                background-color: var(--lumina-red);
             }
             
             .hero h1 {
@@ -768,16 +771,305 @@
                 display: none;
             }
         }
-    </style>
+
+        /* ===== REFINED LUMINA FACE RED & BLACK FINISH ===== */
+        :root {
+            --onyx-pure: #070708;
+            --onyx-deep: #0b0b0d;
+            --onyx-surface: #111114;
+            --onyx-card: #17171b;
+            --lumina-red: #e5092a;
+            --red-glow: rgba(229, 9, 42, 0.22);
+            --red-glow-intense: rgba(229, 9, 42, 0.48);
+            --text-primary: #f8f8fa;
+            --text-secondary: #b4b4bd;
+            --text-dark: #777780;
+            --border-muted: #29292f;
+            --border-glow: #e5092a;
+            --transition: all 0.28s ease;
+        }
+
+        body {
+            background:
+                radial-gradient(ellipse at 50% 0%, rgba(229, 9, 42, 0.075), transparent 38rem),
+                var(--onyx-pure);
+            letter-spacing: 0;
+        }
+
+        body::before {
+            background-image:
+                linear-gradient(to right, rgba(229, 9, 42, 0.025) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(229, 9, 42, 0.025) 1px, transparent 1px);
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,.65), transparent 80%);
+        }
+
+        ::selection { background: var(--lumina-red); color: #fff; }
+        ::-webkit-scrollbar-thumb { background: #4a2028; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--lumina-red); }
+
+        .navbar {
+            padding: 1rem 5%;
+            background: rgba(7, 7, 8, 0.88);
+            border-bottom-color: rgba(255,255,255,.08);
+        }
+
+        .logo { letter-spacing: 2px; font-size: 1.45rem; }
+        .logo span { color: var(--lumina-red); text-shadow: 0 0 18px var(--red-glow); }
+
+        .nav-links { gap: clamp(1rem, 3vw, 2.5rem); }
+        .nav-links a {
+            font-family: var(--font-body);
+            font-size: .76rem;
+            font-weight: 700;
+            letter-spacing: 1.4px;
+        }
+        .nav-links a:hover { color: #fff; text-shadow: none; }
+        .nav-links a::after {
+            background: var(--lumina-red);
+            box-shadow: 0 0 12px var(--red-glow);
+        }
+
+        .cta-btn {
+            border-color: var(--lumina-red);
+            color: #fff;
+            box-shadow: none;
+            border-radius: 3px;
+            font-family: var(--font-body);
+        }
+        .cta-btn:hover {
+            background: var(--lumina-red);
+            color: #fff;
+            box-shadow: 0 8px 24px var(--red-glow);
+        }
+
+        .hero {
+            min-height: 720px;
+            height: min(100vh, 900px);
+            background:
+                linear-gradient(90deg, rgba(0,0,0,.68), rgba(0,0,0,.28), rgba(0,0,0,.7)),
+                linear-gradient(to bottom, rgba(7,7,8,.24), #070708 100%),
+                url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1920&q=85') center 30%/cover no-repeat;
+        }
+
+        .hero-content { max-width: 980px; }
+        .hero h1 {
+            font-size: clamp(2.8rem, 7vw, 5.7rem);
+            letter-spacing: clamp(3px, 1vw, 10px);
+            line-height: 1;
+            margin-bottom: 1.4rem;
+            background: linear-gradient(115deg, #fff 15%, #f4dfe3 55%, var(--lumina-red) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        .hero p {
+            font-family: var(--font-body);
+            font-size: clamp(.75rem, 1.4vw, .95rem);
+            letter-spacing: clamp(1px, .35vw, 3px);
+            font-weight: 600;
+            color: #e5e5e8;
+            margin-bottom: 2.2rem;
+        }
+
+        .btn, .payment-trigger-btn, .submit-btn {
+            background: var(--lumina-red);
+            border-color: var(--lumina-red);
+            color: #fff;
+            border-radius: 3px;
+            box-shadow: 0 8px 24px rgba(229, 9, 42, .18);
+            font-family: var(--font-body);
+            letter-spacing: 1.5px;
+        }
+        .btn { padding: 1.05rem 2.2rem; }
+        .btn:hover, .payment-trigger-btn:hover, .submit-btn:hover {
+            background: #fff;
+            border-color: #fff;
+            color: #111;
+            box-shadow: 0 8px 26px rgba(255,255,255,.12);
+        }
+
+        .container { padding-top: clamp(5rem, 9vw, 8rem); padding-bottom: clamp(5rem, 9vw, 8rem); }
+        .section-title {
+            font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+            letter-spacing: 2px;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 52px;
+            height: 3px;
+            background: var(--lumina-red);
+            margin: 1.15rem auto 0;
+            border-radius: 5px;
+        }
+        .form-subtitle {
+            max-width: 650px;
+            margin: 1.25rem auto 3.5rem;
+            font-family: var(--font-body);
+            font-size: .98rem;
+            line-height: 1.8;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+
+        .model-grid { gap: 1.35rem; }
+        .model-card {
+            height: clamp(340px, 38vw, 460px);
+            border: 1px solid #29292f;
+            border-radius: 5px;
+            background: #151518;
+            box-shadow: 0 12px 30px rgba(0,0,0,.16);
+        }
+        .model-card::before {
+            background: linear-gradient(to bottom, transparent 35%, rgba(0,0,0,.12) 48%, rgba(0,0,0,.92) 100%);
+        }
+        .model-img {
+            filter: grayscale(18%) contrast(105%);
+            transition: transform .6s ease, filter .6s ease;
+        }
+        .model-card:hover {
+            border-color: var(--lumina-red);
+            box-shadow: 0 18px 42px rgba(229,9,42,.14);
+            transform: translateY(-6px);
+        }
+        .model-card:hover .model-img { filter: grayscale(0%) contrast(100%); }
+        .model-info {
+            background: linear-gradient(to top, rgba(7,7,8,.96), rgba(7,7,8,.55));
+            border-top: 1px solid rgba(255,255,255,.08);
+            backdrop-filter: blur(8px);
+            padding: 1.4rem 1.25rem;
+        }
+        .model-info span {
+            font-family: var(--font-body);
+            font-size: .88rem;
+            letter-spacing: 1.5px;
+        }
+        .model-info::after {
+            content: 'LUMINA FACE 2026';
+            top: 1.65rem;
+            color: #ff536b;
+            font-size: .56rem;
+            opacity: .9;
+        }
+
+        #elite-cta-container {
+            padding: clamp(4rem, 8vw, 7rem) 5%;
+            background: linear-gradient(135deg, #101013, #080809);
+            border-top-color: #29292f;
+            border-bottom-color: #29292f;
+        }
+        .elite-card {
+            border: 1px solid rgba(229,9,42,.7);
+            border-radius: 5px;
+            padding: clamp(1.7rem, 5vw, 3.2rem);
+            background:
+                radial-gradient(circle at 100% 0%, rgba(229,9,42,.12), transparent 22rem),
+                linear-gradient(135deg, #17171b, #0b0b0d);
+            box-shadow: 0 20px 60px rgba(0,0,0,.24);
+        }
+        .elite-card::before {
+            content: 'LUMINA FACE • OFFICIAL VOTING';
+            background: #101013;
+            color: #ff536b;
+            font-family: var(--font-body);
+            font-weight: 700;
+            letter-spacing: 1.2px;
+        }
+        .elite-content h2 { font-size: clamp(1.35rem, 3vw, 1.9rem); letter-spacing: 1px; }
+        .elite-content p {
+            color: #ff667b;
+            font-family: var(--font-body);
+            font-size: .95rem;
+            letter-spacing: .3px;
+        }
+        .payment-trigger-btn { text-align: center; padding: 17px 28px; }
+
+        .modal { padding: 1rem; }
+        .modal-content, .success-content {
+            border-color: rgba(229,9,42,.72);
+            border-radius: 6px;
+            background: linear-gradient(145deg, #17171b, #0b0b0d);
+            box-shadow: 0 25px 70px rgba(0,0,0,.65), 0 0 30px rgba(229,9,42,.08);
+        }
+        .modal-content { position: relative; }
+        .success-content { padding: clamp(2rem, 6vw, 4rem); }
+        .success-icon { color: #ff536b; }
+        .terms-container { border-radius: 5px; overflow: hidden; }
+        .terms-scroll-box h3 { color: #ff536b; }
+
+        .footer {
+            background: #09090a;
+            border-top-color: #29292f;
+            padding-top: 4.5rem;
+        }
+        .footer-logo { letter-spacing: 3px; }
+        .footer-logo::first-letter { color: var(--lumina-red); }
+        .footer p { color: #8f8f98; font-family: var(--font-body); letter-spacing: .2px; line-height: 1.8; }
+        .social-links { flex-wrap: wrap; gap: 1.2rem 2rem; }
+        .social-links a {
+            font-family: var(--font-body);
+            font-weight: 700;
+            font-size: .74rem;
+            letter-spacing: 1px;
+        }
+        .social-links a:hover { color: #ff536b; text-shadow: none; }
+        .newsletter { border: 1px solid #2b2b31; border-radius: 5px; }
+        .newsletter-form { border-radius: 3px; overflow: hidden; }
+        .newsletter-form input { min-width: 0; font-family: var(--font-body); }
+        .newsletter-form button {
+            background: var(--lumina-red);
+            color: #fff;
+            font-family: var(--font-body);
+            font-weight: 700;
+        }
+        .newsletter-form button:hover { background: #fff; color: #111; box-shadow: none; }
+
+        a:focus-visible, button:focus-visible, input:focus-visible {
+            outline: 2px solid #ff536b;
+            outline-offset: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar { padding: .9rem 5%; }
+            .nav-links { background: rgba(9,9,10,.98); }
+            .hero { min-height: 650px; height: 88svh; }
+            .hero h1 { letter-spacing: 3px; }
+            .hero p { line-height: 1.8; }
+            .model-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; }
+            .model-card { height: clamp(245px, 66vw, 370px); }
+            .model-info { padding: 1rem .75rem; }
+            .model-info span { font-size: .72rem; letter-spacing: .8px; }
+            .model-info::after { display: none; }
+            .elite-card { gap: 1.8rem; }
+            .social-links { gap: 1rem; }
+            .newsletter-form button { padding: 0 .9rem; font-size: .75rem; }
+        }
+
+        @media (max-width: 420px) {
+            .model-grid { grid-template-columns: 1fr; }
+            .model-card { height: 390px; }
+            .section-title { letter-spacing: 1px; }
+            .newsletter-form { flex-direction: column; }
+            .newsletter-form input { width: 100%; }
+            .newsletter-form button { min-height: 46px; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                scroll-behavior: auto !important;
+                transition-duration: .01ms !important;
+                animation-duration: .01ms !important;
+            }
+        }
+\n    </style>
 </head>
 <body>
 
     <div id="successOverlay" class="success-overlay">
         <div class="success-content">
-            <div class="success-icon">// DATA_INJECTED_SUCCESSFULLY</div>
-            <h2>METRIC POOL SYNCED</h2>
-            <p>Your tracking unit token packets have cleared validation layers. Return to the visual telemetry array.</p>
-            <button class="submit-btn" style="margin-top: 2rem;" onclick="closeSuccess()">RE-ENTER DEPLOYMENT</button>
+            <div class="success-icon">VOTE UPDATE COMPLETE</div>
+            <h2>UPDATE COMPLETE</h2>
+            <p>Your update has been processed. You can return to the contestant list.</p>
+            <button class="submit-btn" style="margin-top: 2rem;" onclick="closeSuccess()">BACK TO CONTESTANTS</button>
         </div>
     </div>
 
@@ -785,13 +1077,13 @@
         <div class="logo">LUMINA<span>FACE</span></div>
         
         <ul class="nav-links nav-menu">
-            <li><a href="#">// CORE</a></li>
-            <li><a href="#contestants-votes">// ROSTER</a></li>
-            <li><a href="#elite-cta-container">// CONTESTANT_VOTE</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#contestants-votes">CONTESTANTS</a></li>
+            <li><a href="#elite-cta-container">VOTE</a></li>
         </ul>
     
         <div class="nav-actions">
-            <button class="cta-btn hide-mobile" onclick="document.getElementById('contestants-votes').scrollIntoView()">ACCESS DATA POOL</button>
+            <button class="cta-btn hide-mobile" onclick="document.getElementById('contestants-votes').scrollIntoView()">MEET THE CONTESTANTS</button>
             
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
@@ -804,15 +1096,15 @@
     <header class="hero">
         <div class="hero-content">
             <h1>LUMINA FACE</h1>
-            <p>[ DIGITAL-VANGUARD ROSTER // NIGERIA ]</p>
-            <a href="#elite-cta-container" class="btn">INITIALIZE INJECTION</a>
+            <p>2026 EDITION &nbsp;•&nbsp; NIGERIA’S NEXT FACE</p>
+            <a href="#elite-cta-container" class="btn">VOTE FOR A CONTESTANT</a>
         </div>
     </header>
 
     <section id="contestants-votes" class="container">
-        <h2 class="section-title">ACTIVE QUANTUM ROSTER</h2>
+        <h2 class="section-title">MEET THE CONTESTANTS</h2>
         <p class="form-subtitle">
-            Select an active contestant profile matrix below to decrypt individual validation streams.
+            Explore the contestants, view their profiles and support the face you believe deserves to win.
         </p>
         
         <div class="model-grid">
@@ -904,11 +1196,11 @@
     <section id="elite-cta-container">
         <div class="elite-card">
             <div class="elite-content">
-                <h2>ALLOCATE VOTE TO TARGET CONTESTANT.</h2>
-                <p>TRANSACTION RATE: ₦50 // PER CONTESTANT INJECTION UNIT</p>
+                <h2>SUPPORT YOUR FAVOURITE CONTESTANT</h2>
+                <p>VOTE PRICE: ₦50 PER VOTE</p>
             </div>
             <a href="payment.html" class="payment-trigger-btn">
-                PROCEED TO VOTE
+                VOTE NOW
             </a>
         </div>
     </section>
@@ -916,18 +1208,18 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">LUMINA FACE</div>
-            <p>// ACCESS CONSOLE SYNCED. © 2026 LUMINA FACE NIGERIA. ALL ENCRYPTION STANDARDS DEPLOYED.</p>
+            <p>© 2026 LUMINA FACE NIGERIA. CELEBRATING CONFIDENCE, BEAUTY AND INDIVIDUALITY.</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/lumina_face01/?igsh=MWJmajRianQxbjFodw==" target="_blank">[ INSTAGRAM INTERFACE ]</a>
-                <a href="#">[ X.COM MAIN FRAME ]</a>
-                <a href="#">[ FB_CONTESTANT ]</a>
+                <a href="https://www.instagram.com/lumina_face01/?igsh=MWJmajRianQxbjFodw==" target="_blank">INSTAGRAM</a>
+                <a href="#">X / TWITTER</a>
+                <a href="#">FACEBOOK</a>
             </div>
 
             <div class="newsletter">
-                <p style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;">Subscribe to algorithmic drop sequence logs?</p>
+                <p style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;">Get LUMINA Face updates in your inbox.</p>
                 <form action="https://formspree.io/f/xeebqzbe" method="POST" class="newsletter-form">
-                    <input type="email" name="subscriber_email" placeholder="OPERATOR@EMAIL.COM" required>
-                    <button type="submit">SYNC TERMINAL</button>
+                    <input type="email" name="subscriber_email" placeholder="YOUR EMAIL ADDRESS" required>
+                    <button type="submit">SUBSCRIBE</button>
                 </form>
             </div>
         </div>
@@ -936,19 +1228,19 @@
     <div id="portfolioModal" class="modal">
         <div class="modal-content">
             <span onclick="closePortfolio()" style="position: absolute; top: 15px; right: 20px; font-size: 1.5rem; cursor: pointer; color: var(--text-dark); font-family: var(--font-mono);">&times;</span>
-            <div id="modalImg" style="width: 140px; height: 140px; border-radius: 0; margin: 10px auto 25px; border: 1px solid var(--lumina-gold); filter: grayscale(100%);"></div>
+            <div id="modalImg" style="width: 140px; height: 140px; border-radius: 0; margin: 10px auto 25px; border: 1px solid var(--lumina-red); filter: grayscale(100%);"></div>
             <h2 id="modalName" style="font-family: var(--font-display); letter-spacing: 2px; text-transform: uppercase; font-size: 1.5rem; margin-bottom: 5px;">---</h2>
-            <p id="contestantId" style="font-family: var(--font-mono); color: var(--lumina-gold); letter-spacing: 2px; font-size: 0.75rem; margin-bottom: 25px;">---</p>
+            <p id="contestantId" style="font-family: var(--font-mono); color: var(--lumina-red); letter-spacing: 2px; font-size: 0.75rem; margin-bottom: 25px;">---</p>
             
             <div style="background: var(--onyx-pure); padding: 20px; border: 1px solid var(--border-muted); margin-bottom: 25px; position: relative;">
-                <p style="margin: 0; font-size: 0.7rem; color: var(--text-dark); font-family: var(--font-mono); letter-spacing: 1px; text-transform: uppercase;">VERIFIED CONTESTANT vote</p>
-                <p style="margin: 5px 0 0; font-family: var(--font-display); font-size: 2rem; font-weight: 900; color: #fff;"><span id="modalVotes">0</span> <span style="font-size: 0.8rem; color: var(--text-dark); font-family: var(--font-mono); font-weight: normal; letter-spacing: 1px;">UNITS</span></p>
+                <p style="margin: 0; font-size: 0.7rem; color: var(--text-dark); font-family: var(--font-mono); letter-spacing: 1px; text-transform: uppercase;">DISPLAYED VOTE COUNT</p>
+                <p style="margin: 5px 0 0; font-family: var(--font-display); font-size: 2rem; font-weight: 900; color: #fff;"><span id="modalVotes">0</span> <span style="font-size: 0.8rem; color: var(--text-dark); font-family: var(--font-mono); font-weight: normal; letter-spacing: 1px;">VOTES</span></p>
             </div>
             
             <p style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 25px; text-transform: uppercase; text-align: left; padding-left: 10px; border-left: 1px solid var(--text-dark);">
-                * Metric telemetry clears downline instantly via encrypted smart routing networks.
+                * The vote count shown here reflects the value currently available on this page.
             </p>
-            <a href="payment.html" class="submit-btn" style="display: block; text-decoration: none; text-align: center;">PROCEED TO VOTE</a>
+            <a href="payment.html" class="submit-btn" style="display: block; text-decoration: none; text-align: center;">VOTE NOW</a>
         </div>
     </div>
 
