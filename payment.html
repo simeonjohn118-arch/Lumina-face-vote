@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secure Portal | Lumina Face Nigeria</title>
+    <title>LUMINA FACE | Voting Payment Portal</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --lumina-black: #050505;
             --lumina-dark-card: #0d0d11;
-            --lumina-gold: #dfba73;
-            --lumina-gold-glow: rgba(223, 186, 115, 0.15);
-            --lumina-gold-dark: #a68446;
+            --lumina-gold: #e5092a;
+            --lumina-gold-glow: rgba(229, 9, 42, 0.20);
+            --lumina-gold-dark: #a80720;
             --text-pure: #ffffff;
             --text-muted: #8a8a93;
-            --border-dim: rgba(223, 186, 115, 0.1);
-            --border-bright: rgba(223, 186, 115, 0.4);
+            --border-dim: rgba(229, 9, 42, 0.18);
+            --border-bright: rgba(229, 9, 42, 0.55);
         }
 
         * {
@@ -31,8 +31,8 @@
             line-height: 1.7;
             overflow-x: hidden;
             background-image: 
-                radial-gradient(circle at 80% 20%, rgba(223, 186, 115, 0.04) 0%, transparent 40%),
-                radial-gradient(circle at 10% 80%, rgba(223, 186, 115, 0.03) 0%, transparent 50%);
+                radial-gradient(circle at 80% 20%, rgba(229, 9, 42, 0.055) 0%, transparent 40%),
+                radial-gradient(circle at 10% 80%, rgba(229, 9, 42, 0.035) 0%, transparent 50%);
         }
 
         /* Luxury Minimalist Header */
@@ -72,7 +72,7 @@
             letter-spacing: 2px;
             padding: 10px 24px;
             border: 1px solid var(--border-dim);
-            border-radius: 0px;
+            border-radius: 8px;
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
@@ -98,6 +98,7 @@
         .stage-card {
             background: var(--lumina-dark-card);
             border: 1px solid var(--border-dim);
+            border-radius: 16px;
             padding: 50px;
             position: relative;
             box-shadow: 0 30px 60px rgba(0,0,0,0.4);
@@ -133,8 +134,9 @@
 
         /* Premium Luxury Bank Details Vault */
         .vault-container {
-            background: rgba(223, 186, 115, 0.02);
+            background: rgba(229, 9, 42, 0.045);
             border-left: 3px solid var(--lumina-gold);
+            border-radius: 0 12px 12px 0;
             padding: 35px;
             margin: 35px 0;
         }
@@ -200,13 +202,14 @@
 
         .prime-cta:hover {
             background: var(--text-pure);
-            box-shadow: 0 0 30px rgba(223, 186, 115, 0.3);
+            box-shadow: 0 0 30px rgba(229, 9, 42, 0.30);
         }
 
         /* Editorial Sidebar Info Module */
         .info-sidebar {
             background: var(--lumina-dark-card);
             border: 1px solid var(--border-dim);
+            border-radius: 16px;
             padding: 40px 35px;
             position: sticky;
             top: 120px;
@@ -255,7 +258,7 @@
             border: 1px solid var(--lumina-gold);
             padding: 25px;
             color: var(--text-pure);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(223, 186, 115, 0.1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(229, 9, 42, 0.12);
             display: flex;
             gap: 15px;
             position: relative;
@@ -309,6 +312,13 @@
             .portal-container { grid-template-columns: 1fr; margin: 30px auto; gap: 30px; }
             .info-sidebar { order: -1; position: static; }
             .stage-card { padding: 30px 20px; }
+            .main-headline { font-size: 1.45rem; }
+            .lumina-header { padding: 18px 5%; }
+            .brand-title { font-size: 1.15rem; letter-spacing: 3px; }
+            .vault-container { padding: 22px 16px; }
+            .meta-value { gap: 12px; flex-wrap: wrap; overflow-wrap: anywhere; }
+            .crypto-style-num { font-size: 1.15rem; letter-spacing: 1px; }
+            .prime-cta { font-size: 0.8rem; letter-spacing: 1.5px; padding: 17px 12px; }
             .toast-container { bottom: 20px; right: 20px; width: calc(100% - 40px); }
         }
     </style>
@@ -323,46 +333,46 @@
     <div class="portal-container">
         <main class="stage-card">
             <span class="stage-indicator">Verification Phase 01</span>
-            <h2 class="main-headline">Secure Gateway Transfer</h2>
+            <h2 class="main-headline">Complete Your Vote Payment</h2>
             
             <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 30px; font-weight: 300;">
-                To lock in your official votes for your designated model profile, dispatch a wire transfer of <span style="color: var(--text-pure); font-weight: 500;">₦50 per vote allocation</span> (or your chosen aggregate amount) to the secure institutional repository below.
+                Each vote costs <strong style="color: var(--text-pure); font-weight: 600;">₦50</strong>. Transfer the total amount for the number of votes you want to cast to the account below. Please confirm the account details before sending your payment, and keep your transfer receipt for verification.
             </p>
 
             <div class="vault-container">
                 <p class="meta-label">Financial Institution</p>
                 <p class="meta-value">OPay Digital Bank</p>
 
-                <p class="meta-label">Secure Destination Account</p>
+                <p class="meta-label">Account Number</p>
                 <div class="meta-value">
                     <span id="targetAccount" class="crypto-style-num">9130530533</span>
-                    <button class="interactive-copy" onclick="triggerCopy()">Copy Routing</button>
+                    <button class="interactive-copy" onclick="triggerCopy()">Copy Number</button>
                 </div>
 
-                <p class="meta-label">Verified Escrow Identity</p>
+                <p class="meta-label">Account Name</p>
                 <p class="meta-value" style="margin-bottom: 0; color: var(--lumina-gold);">Simeon Kehinde Mather</p>
             </div>
 
-            <button class="prime-cta" onclick="showNotification()">I Have Initiated Allocation</button>
+            <button class="prime-cta" onclick="showNotification()">I’ve Made the Transfer</button>
         </main>
 
         <!-- Sidebar Summary -->
         <aside class="info-sidebar">
-            <h3 class="sidebar-title">Allocation Specs</h3>
+            <h3 class="sidebar-title">Payment Summary</h3>
             <div class="invoice-line">
-                <span>Metric Cost Allocation</span>
+                <span>Price per vote</span>
                 <span style="color: var(--text-pure);">₦50.00 / vote</span>
             </div>
             <div class="invoice-line">
-                <span>Infrastructure Processing</span>
+                <span>Processing fee</span>
                 <span style="color: var(--lumina-gold); font-weight: 500;">COMPLIMENTARY</span>
             </div>
             <div class="invoice-line grand-total">
-                <span>Aggregate due</span>
+                <span>Minimum payment</span>
                 <span>₦50.00</span>
             </div>
             <p style="font-size: 0.65rem; color: var(--text-muted); text-align: center; margin-top: 35px; letter-spacing: 1px; text-transform: uppercase;">
-                🔒 Cryptographic End-to-End Verification Active
+                PAYMENT CONFIRMATION REQUIRED
             </p>
         </aside>
     </div>
@@ -371,9 +381,9 @@
     <div class="toast-container" id="toastContainer">
         <div class="lumina-toast" id="paymentToast">
             <div class="toast-content">
-                <div class="toast-title">Allocation Noted</div>
+                <div class="toast-title">Next Step: Verify Payment</div>
                 <div class="toast-message">
-                    Please take a screenshot of your payment confirmation and <strong>send your receipt directly to the contestant</strong> for proper audit recording and immediate vote activation.
+                    Save your transfer receipt and send it to the contestant or the official LUMINA FACE payment contact for verification. Votes should only be counted after the payment has been confirmed.
                 </div>
             </div>
             <button class="toast-close-btn" onclick="dismissNotification()">&times;</button>
@@ -383,19 +393,39 @@
     <script>
         let toastTimeout;
 
-        function triggerCopy() {
-            const accountDigits = document.getElementById('targetAccount').innerText;
-            navigator.clipboard.writeText(accountDigits);
+        async function triggerCopy() {
+            const accountDigits = document.getElementById('targetAccount').innerText.trim();
             const buttonRef = document.querySelector('.interactive-copy');
-            
-            buttonRef.innerText = "Logged!";
-            buttonRef.style.background = "var(--lumina-gold)";
-            buttonRef.style.color = "var(--lumina-black)";
-            
-            setTimeout(() => { 
-                buttonRef.innerText = "Copy Routing"; 
-                buttonRef.style.background = "transparent";
-                buttonRef.style.color = "var(--lumina-gold)";
+            let copied = false;
+
+            try {
+                if (navigator.clipboard && window.isSecureContext) {
+                    await navigator.clipboard.writeText(accountDigits);
+                    copied = true;
+                } else {
+                    const temporaryInput = document.createElement('textarea');
+                    temporaryInput.value = accountDigits;
+                    temporaryInput.setAttribute('readonly', '');
+                    temporaryInput.style.position = 'fixed';
+                    temporaryInput.style.opacity = '0';
+                    document.body.appendChild(temporaryInput);
+                    temporaryInput.select();
+                    copied = document.execCommand('copy');
+                    temporaryInput.remove();
+                }
+            } catch (error) {
+                copied = false;
+            }
+
+            buttonRef.innerText = copied ? 'Copied!' : 'Copy Manually';
+            if (copied) {
+                buttonRef.style.background = 'var(--lumina-gold)';
+                buttonRef.style.color = 'var(--lumina-black)';
+            }
+            setTimeout(() => {
+                buttonRef.innerText = 'Copy Number';
+                buttonRef.style.background = 'transparent';
+                buttonRef.style.color = 'var(--lumina-gold)';
             }, 2000);
         }
 
